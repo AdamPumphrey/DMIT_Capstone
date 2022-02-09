@@ -224,6 +224,17 @@ This script should be ran as admin on the main domain controller for Company 2.
 
 If users have already been created using New-CWSRandomUser.ps1 or New-LearningRandomUser.ps1, the generatedUsernames.csv and generatedCellphones.csv files need to be copied and pasted into C:\Windows\DMIT2590_Logs on the machine that New-ZenRandomUser.ps1 is going to run on. This is to avoid duplicate user/cellphone creation. Exceptions will be thrown if an attempted duplicate user creation is tried.
 
+The following are default attributes for Company 2’s Grande Prairie users:
+* Password = Password1
+* City = Grande Prairie
+* Country = CA (Canada)
+* Company = Zen
+* Postal Code = B1AD2C
+* State = Alberta
+* Street Address = 54321 76st
+* Home  Page = www.Zen.com
+* Office Phone = 7803211234 (this value increments per user. E.g. the first user generated has an office phone of 78012341234, the second user has an office phone of 7801231235, etc. This is to simulate extensions inside of an office).
+
 Aside from the log file name changing, the changes are in the departments and titles that are generated:
 
 Executive Staff:
@@ -278,6 +289,17 @@ This script is fundamentally the same as New-CWSRandomUser.ps1, however some det
 This script should be ran as admin on the main sub-domain controller for Company 2.
 
 If users have already been created using New-CWSRandomUser.ps1 or New-ZenRandomUser.ps1, the generatedUsernames.csv and generatedCellphones.csv files need to be copied and pasted into C:\Windows\DMIT2590_Logs on the machine that New-ZenRandomUser.ps1 is going to run on. This is to avoid duplicate user/cellphone creation. Exceptions will be thrown if an attempted duplicate user creation is tried.
+
+The following are default attributes for Company 2’s Spokane sub-domain users:
+* Password = Password1
+* City = Spokane
+* Country = US (United States)
+* Company = Zen
+* Postal Code = Y5XU8N
+* State = Washington
+* Street Address = 90852 65st
+* Home  Page = www.learning.zen.com
+* Office Phone = 7803211234 (this value increments per user. E.g. the first user generated has an office phone of 78012341234, the second user has an office phone of 7801231235, etc. This is to simulate extensions inside of an office).
 
 Aside from the log file name changing, the changes are in the departments and titles that are generated:
 
