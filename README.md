@@ -312,3 +312,46 @@ Teachers:
 Students:
 * 47 staff - 47 Students
 * Classes of 15 students per teacher unless there are remainders. E.g.) 47 students, one class of 15, one class of 15, one class of 17
+
+# New-CWSGroups.ps1
+
+This script creates and assigns users to Security Groups for Company1.
+
+The script uses an array of existing OUs in the domain to create corresponding Security Groups. Once the groups are created, the corresponding users are assigned to those groups.
+
+The following groups only contain other groups as members:
+* CWS IT Users
+* CWS All Employees
+
+The IT Users group contains all of the groups for the sub-OUs of IT (Tech Support, Server Support, Programming, Networking Support, Application Support, Administration).
+
+The All Employees groups contains all other groups (Sales, HR, Finance, Executive Staff, IT).
+
+# New-ZenGroups.ps1
+
+This script creates and assigns users to Security Groups for Company2.
+
+The script functions in the same way as New-CWSGroups.ps1.
+
+The following groups only contain other groups as members:
+* Zen Design Users
+* Zen Sales Users
+* Zen All Employees
+
+The Design Users group contains all of the groups for the sub-OUs of Design (Animators, Content Experts, DB Engineers, Programmers, UI Experts).
+
+The Sales Users group contains all of the groups for the sub-OUs of Sales (East Sales Team, International Sales Team, North Sales Team, Sales Accounts Team, South Sales Team, West Sales Team).
+
+The All Employees group contains all other groups (Sales, HR, Finance, Executive Staff, IT, Design).
+
+# New-LearningGroups.ps1
+
+This script creates and assigns users to Security Groups for Company2's sub-domain.
+
+The script functions in the same way as New-CWSGroups.ps1.
+
+The following groups only contain other groups as members:
+* All Users
+
+The All Users group contains all other groups (Students, Teachers).
+
